@@ -19,12 +19,59 @@
   </head>
 
   <body>
-	   <form>
-      Nome: <input type="text" name="nome" /><br />
-      Sobrenome: <input type="text"
-      name="sobrenome" />
-      Senha: <input type="password" name="senha" /> 
-    </form>
+	  <form>
+        <h2>Cadastro:</h2>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Nome:</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Seu nome">
+          </div>
+          <div class="form-group">
+              <label for="exampleInputPassword1">Sobrenome</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Sobrenome">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Idade</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Idade">
+              </div>
+          <div class="form-group">
+              <label for="exampleInputEmail1">Crie um e-mail:</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+              <small id="emailHelp" class="form-text text-muted">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Crie uma senha</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+              </div>
+
+          <input type= "radio" name="sexo"
+          value= "masculino" /> Masculino <br/>
+
+          <input type= "radio" name="sexo"
+          value= "feminino" /> Feminino <br/>
+
+          <input type= "radio" name="sexo"
+          value= "indefinido" /> Indefinido <br/>
+
+           <input type = "submit" name = "" CRIAR = "">
+           <input type = "reset" name = "" APAGAR = "">
+      </form>
+      <h3>Se já é cadastrado:</h3>
+        <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Endereço de email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+              <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Senha</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Clique em mim</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
 
     <!-- Navigation on top -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
